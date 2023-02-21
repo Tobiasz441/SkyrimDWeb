@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import {RouterLink, RouterModule, RouterOutlet} from "@angular/router";
 import { AppRoutingModule } from './app-routing.module';
+import { RegistrationComponent } from './registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AppRoutingModule } from './app-routing.module';
     MainComponent,
     AsideComponent,
     FooterComponent,
-    PrivacyPolicyComponent
+    PrivacyPolicyComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,

@@ -29,6 +29,7 @@ app-nav {
 }
 
 app-privacy-policy,
+app-registration,
 app-main {
   grid-area: content;
   background-color: darkgray;
@@ -84,9 +85,13 @@ app-nav{
 
 .image{
   display: block;
-  width: 100%;
+  width: auto;
   height: auto;
   grid-area: img;
+  justify-self: center;
+  object-position: top;
+  max-height: 69vh;
+  max-width: 40vw;
 }
 
 .info{
@@ -107,16 +112,16 @@ app-nav{
 }
 
 .button{
-  width: 50%;
+  width: 20%;
   height: auto;
 }
 
 .dislike{
   grid-area: dislike;
-  justify-self: start;
+  justify-self: center;
 }
 
 .like{
   grid-area: like;
-  justify-self: end;
+  justify-self: center;
 }
