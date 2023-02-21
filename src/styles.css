@@ -125,3 +125,10 @@ app-nav{
   grid-area: like;
   justify-self: center;
 }
+
+.registration{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10fr 1fr;
+  grid-template-areas: "labels fields" ". buttons";
+}
