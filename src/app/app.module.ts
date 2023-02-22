@@ -8,9 +8,10 @@ import { MainComponent } from './main/main.component';
 import { AsideComponent } from './aside/aside.component';
 import { FooterComponent } from './footer/footer.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
-import {RouterLink, RouterModule, RouterOutlet} from "@angular/router";
+import {RouterLink, RouterOutlet} from "@angular/router";
 import { AppRoutingModule } from './app-routing.module';
 import { RegistrationComponent } from './registration/registration.component';
+import { UserFormComponent } from './user-form/user-form.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { RegistrationComponent } from './registration/registration.component';
     AsideComponent,
     FooterComponent,
     PrivacyPolicyComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    UserFormComponent
   ],
   imports: [
     BrowserModule,

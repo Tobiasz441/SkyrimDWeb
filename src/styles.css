@@ -133,8 +133,13 @@ app-nav{
 }
 
 .registration{
-  display: grid;
+  display: inline;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 10fr 1fr;
-  grid-template-areas: "labels fields" ". buttons";
+  grid-template-rows: repeat(8,1fr);
+}
+
+div input, div label{
+  border-radius: 10px;
+  margin-bottom: 5px;
+  height: 10%;
 }
