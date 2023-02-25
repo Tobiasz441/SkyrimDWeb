@@ -1,17 +1,18 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { NavComponent } from './nav/nav.component';
-import { MainComponent } from './main/main.component';
-import { AsideComponent } from './aside/aside.component';
-import { FooterComponent } from './footer/footer.component';
-import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import {AppComponent} from './app.component';
+import {HeaderComponent} from './header/header.component';
+import {NavComponent} from './nav/nav.component';
+import {MainComponent} from './main/main.component';
+import {AsideComponent} from './aside/aside.component';
+import {FooterComponent} from './footer/footer.component';
+import {PrivacyPolicyComponent} from './privacy-policy/privacy-policy.component';
 import {RouterLink, RouterOutlet} from "@angular/router";
-import { AppRoutingModule } from './app-routing.module';
-import { RegistrationComponent } from './registration/registration.component';
-import { UserFormComponent } from './user-form/user-form.component';
+import {AppRoutingModule} from './app-routing.module';
+import {RegistrationComponent} from './registration/registration.component';
+import {FormsModule} from "@angular/forms";
+import {UserFormComponent} from "./user-form/user-form.component";
 
 @NgModule({
   declarations: [
@@ -29,9 +30,11 @@ import { UserFormComponent } from './user-form/user-form.component';
     BrowserModule,
     RouterLink,
     RouterOutlet,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

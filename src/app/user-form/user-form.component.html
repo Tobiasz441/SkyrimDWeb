@@ -1,1 +1,16 @@
-<p>user-form works!</p>
+<div class="form-group">
+  <label for="username">Username</label>
+  <input class="form-control" type="text" name="username" id="username" required [(ngModel)]="model.username">
+  <label for="birthday">Birthday</label>
+  <input class="form-control" type="date" name="birthday" id="birthday" required [(ngModel)]="model.birthday">
+  <label for="location">Location</label>
+  <input class="form-control" type="text" name="username" id="location" required [(ngModel)]="model.location">
+  <label for="gender">Gender</label>
+  <input class="form-control" type="text" name="gender" id="gender" required [(ngModel)]="model.gender">
+  <label for="password">Password</label>
+  <input class="form-control" type="password" name="password" id="password" required [(ngModel)]="model.password">
+  <label for="photo">Photo</label>
+  <input class="form-control" type="file" name="photo" id="photo" accept="image/jpeg, image/png" (change)="selectFiles($event)">
+  <img src="{{preview}}" alt="Image preview" style="max-height: 45vh; max-width: 100%; padding: 20px 0 20px 0" >
+  <button class="form-control" type="submit">Register</button>
+</div>
