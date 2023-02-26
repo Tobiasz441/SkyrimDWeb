@@ -1,0 +1,2 @@
+POST http://localhost:8080/api/like?id=1a5990c9-a775-11ed-89fd-c9e316c18866&like=1a5990c9-a775-11ed-89fd-c9e316c18866
+Content-Type: application/json

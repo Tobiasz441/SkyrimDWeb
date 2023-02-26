@@ -13,6 +13,9 @@ import {AppRoutingModule} from './app-routing.module';
 import {RegistrationComponent} from './registration/registration.component';
 import {FormsModule} from "@angular/forms";
 import {UserFormComponent} from "./user-form/user-form.component";
+import { UserInfoComponent } from './user-info/user-info.component';
+import { UserPhotoComponent } from './user-photo/user-photo.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -24,14 +27,18 @@ import {UserFormComponent} from "./user-form/user-form.component";
     FooterComponent,
     PrivacyPolicyComponent,
     RegistrationComponent,
-    UserFormComponent
+    UserFormComponent,
+    UserInfoComponent,
+    UserPhotoComponent
   ],
   imports: [
     BrowserModule,
     RouterLink,
     RouterOutlet,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

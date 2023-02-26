@@ -1,13 +1,20 @@
 <main class="person">
-  <img class="image" src="assets/pr5q7i-01-jjo4wg3nwfo71.jpg"/>
+  <img class="image" [src]="this.user?.photo" alt="User Photo">
   <div class="info">
-    <p>Here comes the info about the person on the picture...
-      <br>
-      At least I hope so</p>
+    <label for="username">Name</label>
+    <p id="username" [innerHTML]="this.user?.username"></p>
+    <label for="birthday">Birthday</label>
+    <p id="birthday" [innerHTML]="this.user?.birthday"></p>
+    <label for="location">Location</label>
+    <p id="location" [innerHTML]="this.user?.location"></p>
+    <label for="gender">Gender</label>
+    <p id="gender" [innerHTML]="this.user?.gender"></p>
+    <label for="description">Description</label>
+    <p id="description" [innerHTML]="this.user?.description"></p>
+
   </div>
   <div class="buttons">
-    <img class="dislike button" src="assets/icons/close.png" onclick="alert('Disliked')">
-    <img class="like button" src="assets/icons/heart.png" onclick="alert('Liked')">
+    <img class="dislike button" src="assets/icons/close.png" (click)="dislike()" alt="Dislike">
+    <img class="like button" src="assets/icons/heart.png" alt="Like" (click)="like()">
   </div>
-
 </main>
