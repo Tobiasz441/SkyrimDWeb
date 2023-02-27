@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {User} from "../user";
 // @ts-ignore
 import {v4 as uuid} from 'uuid';
+import {UsersService} from "../users.service";
 
 let myuuid = uuid();
 
@@ -12,6 +13,8 @@ let myuuid = uuid();
 })
 
 export class UserFormComponent {
+  constructor(public restApi: UsersService) {
+  }
   selectedFiles?: FileList;
   selectedFileNames: string[] = [];
   preview: string = "";
@@ -20,6 +23,7 @@ export class UserFormComponent {
   submitted = false;
 
   onSubmit() {
+    this.restApi.addUser(this.model);
     this.submitted = true
   }
 

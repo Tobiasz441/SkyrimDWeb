@@ -12,5 +12,5 @@
   <label for="photo">Photo</label>
   <input class="form-control" type="file" name="photo" id="photo" accept="image/jpeg, image/png" (change)="selectFiles($event)">
   <img src="{{preview}}" alt="Image preview" style="max-height: 45vh; max-width: 100%; padding: 20px 0 20px 0" >
-  <button class="form-control" type="submit">Register</button>
+  <button class="form-control" type="submit" (click)="onSubmit()">Register</button>
 </div>

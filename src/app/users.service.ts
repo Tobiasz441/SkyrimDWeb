@@ -29,6 +29,11 @@ export class UsersService {
     this.http.post(this.baseUrl+"/like?id="+id1+"&like="+id2,null).subscribe();
   }
 
+  addUser(user: User){
+    console.log(user)
+    this.http.post(this.baseUrl+"/addUser?username="+user.username+"&photo="+user.photo+"&location="+user.location+"&birthday="+user.birthday.toISOString().substring(0,10)+"&description="+user.description+"&gender="+user.gender+"&password="+user.password,null).subscribe();
+  }
+
 
   handleError(error: any) {
     let errorMessage = '';
